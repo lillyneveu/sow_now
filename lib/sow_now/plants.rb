@@ -1,3 +1,7 @@
+require 'pry'
+require 'open-uri'
+require 'nokogiri'
+
 class SowNow::Plants
   attr_accessor :name, :season, :url
 
@@ -10,6 +14,7 @@ class SowNow::Plants
     plants = []
 
     doc = Nokogiri::HTML(open("http://www.ufseeds.com/What-To-Plant-Now.html"))
+    binding.pry
     #go to http://www.ufseeds.com/What-To-Plant-Now.html
     #extract the properties
     #instantiate a list of plants
