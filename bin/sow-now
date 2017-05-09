@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+# require './lib/sow_now'
+require "bundler/setup"
+require "sow_now"
+
+SowNow::CLI.new.call
+#all you need to start your program
