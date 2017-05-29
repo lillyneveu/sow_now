@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# require './lib/sow_now'
+require './lib/sow_now'
 require "bundler/setup"
 require "sow_now"
 

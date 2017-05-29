@@ -27,13 +27,14 @@ class SowNow::CLI
     puts "11 - November"
     puts "12 - December"
     input = nil
-    while input != "exit"
-      input = gets.strip.downcase
-      if input.to_i > 0
-        puts @plants[input.to_i-1]
-      case input
-      when "1"
-        puts ""
+      while input != "exit"
+        input = gets.strip.downcase
+        if input.to_i > 0
+          puts @plants[input.to_i-1]
+        case input
+        when "1"
+          puts ""
+        end
       end
     end
   end
